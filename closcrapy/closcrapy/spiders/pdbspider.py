@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy import log
 from closcrapy.items import PdbItem
 
 
