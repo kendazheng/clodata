@@ -13,7 +13,9 @@ BOT_NAME = 'closcrapy'
 
 SPIDER_MODULES = ['closcrapy.spiders']
 NEWSPIDER_MODULE = 'closcrapy.spiders'
-
+ITEM_PIPELINES = {
+    'closcrapy.pipelines.PdbItemJsonWriter': 300,
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'closcrapy (+http://www.yourdomain.com)'

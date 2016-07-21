@@ -12,3 +12,9 @@ class CloscrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class PdbItem(scrapy.Item):
+    title = scrapy.Field()
+    link = scrapy.Field()
+    catalog = scrapy.Field()
